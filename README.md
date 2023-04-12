@@ -33,22 +33,46 @@ This tutorial outlines the lifecycle of a ticket from intake to resolution withi
 <p>
 <img src="https://i.imgur.com/nkF1tjp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
   
-Assign Permissions: ost-config.php
-Disable inheritance -> Remove All
-New Permissions -> Everyone -> All
-Continue Setting up osTicket in the browser (click Continue)
-Name Helpdesk
-Default email (receives email from customers)
-From the Installation Files, download and install HeidiSQL.
-Open Heidi SQL
-Create a new session, root/Password1
-Connect to the session
-Create a database called “osTicket”
-Continue Setting up osticket in the browser
-MySQL Database: osTicket
-MySQL Username: root
-MySQL Password: Password1
-Click “Install Now!”
+Configure Roles
+ Admin Panel -> Agents -> Roles
+ Supreme Admin
+  
+Configure Departments
+ Admin Panel -> Agents -> Departments
+ System Administrators
+
+Configure Teams
+ Admin Panel -> Agents -> Teams
+ Level I Support
+ Level II Support
+  
+Allow anyone to create tickets
+ Admin Panel -> Settings -> User Settings
+ Registration Required: Require registration and login to create tickets 
+  
+Configure Agents (workers)
+ Admin Panel -> Agents -> Add New
+  Jane
+  John
+  
+Configure Users (customers)
+ Agent Panel -> Users -> Add New
+  Karen
+  Ken
+  
+Configure SLA
+ Admin Panel -> Manage -> SLA
+  Sev-A (1 hour, 24/7)
+  Sev-B (4 hours, 24/7)
+  Sev-C (8 hours, business hours)
+  
+Configure Help Topics
+ Admin Panel -> Manage -> Help Topics
+  Business Critical Outage
+  Personal Computer Issues
+  Equipment Request
+  Password Reset
+
 </p>
 <p>
 
